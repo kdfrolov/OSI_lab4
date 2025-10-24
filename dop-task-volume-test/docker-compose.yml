@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  example:
+    image: alpine
+    command: ["sh", "-c", "echo 'Test data' > /data/hostfile.txt"]
+    volumes:
+      - ./data:/data
